@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kitchen Worktops</title>
+    <link rel="stylesheet" href="css/shqip.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="hero-nav">
+            <ul>
+                <li><a href="shqip.html">Our Kitchens</a></li>
+                <li><a href="howw.html">How to Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <main>
+        <section class="contact-section">
+            <h1>Get in touch with us!</h1>
+            <div class="contact-info">
+                <p>If you have any questions or would like to know more about our worktops, please feel free to contact us.</p>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096755!2d144.9537351153159!3d-37.81627977975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57797e34aa11a39!2sEnvato!5e0!3m2!1sen!2sau!4v1614066339945!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contact-form" onsubmit="return emailSend();">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-column">
+            <h3>Info</h3>
+            <ul>
+                <li><a href="howw.html">How it works</a></li>
+                <li><a href="FA.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
