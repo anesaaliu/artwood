@@ -1,0 +1,820 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f4ef;
+  color: #333;
+}
+
+header, footer {
+  background-color: #fff;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+  border-radius: 7px;
+}
+
+.hero-logo img {
+  height: 80px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fdfaf7;
+  position: relative;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hero-logo img {
+  height: 150px; 
+}
+
+.hero h1 {
+  font-family: 'Garamond', serif; 
+  font-size: 45px;
+  margin-top: 30px; 
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.hero a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.hero-nav {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  
+}
+.hero-nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-nav ul li {
+  margin-right: 20px;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 25px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none; 
+}
+
+#search-btn {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  flex: 1 1 300px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
+.kitchen-types {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.kitchen {
+  text-align: center;
+  max-width: 500px;
+}
+
+.kitchen img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.kitchen h2 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.kitchen a{
+  color: black;
+}
+.kitchen a[href="appliances.html"] img {
+  width: 100%;
+  height: 95%;
+  border-radius: 8px;
+}
+.unique-kitchen {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.unique-kitchen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.unique-kitchen-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgba(78, 78, 78, 0.5);
+  text-align: center;
+  color: white;
+  padding: 80px;
+}
+
+.unique-kitchen-overlay h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.unique-kitchen-overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.unique-kitchen-overlay button {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.unique-kitchen-overlay button a {
+  color: #020202;
+    text-align: center;
+    font-weight: bold;
+}
+.how-to-build {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.how-to-build-item {
+  flex: 1 1 500px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.how-to-build-item img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.how-to-build p {
+  font-size: 3em;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-weight: 400;
+  font-family: 'Garamond', serif; 
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  color: #404040;
+}
+
+.faq .question {
+  margin-bottom: 20px;
+}
+
+.faq .question h3 {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.kitchen-details {
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Georgia', serif; 
+  color: #333;
+}
+
+.kitchen-details h1 {
+  font-family: 'Garamond', serif; 
+  font-size: 47px;
+  margin-top: 20px; 
+  font-weight: 400;
+  margin-bottom: 25px;
+
+}
+.kitchen-details h3 {
+  font-family: 'Garamond', serif; 
+  font-size: 32px;
+  margin-top: 20px; 
+  font-weight: 400;
+  margin-bottom: 25px;
+
+}
+.kitchen-details p {
+  font-size: 1.4em;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.kitchen-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.kitchen-item {
+  flex: 1 1 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kitchen-item img {
+  width: 500px; 
+  height: 700px; 
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.kitchen-item h2 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 700;
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.kitchen-item p {
+  font-size: 1em;
+  margin-top: 10px;
+  font-weight: 400;
+  height: 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #333;
+}
+
+.article-text h1 {
+  font-family: 'Garamond', serif;
+  font-size: 47px;
+  margin-top: 20px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.article-text p {
+  font-size: 1.4em;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.article-item p{
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-weight: 400;
+  height: 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.article-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.article-item {
+  flex: 1 1 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.article-item img {
+  width: 700px; 
+  height: 800px; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.article-item h2 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 700;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.faq-section {
+  padding: 50px 20px;
+  background-color: #fdfaf7;
+}
+
+.faq {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.faq-item {
+  margin-bottom: 40px;
+}
+
+.faq-item h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-family: 'eb-garamond';
+  text-align: left;
+
+}
+
+.faq-item h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: 'eb-garamond';
+  letter-spacing: .05em;
+  line-height: 1.6em;
+  text-align: left;
+
+}
+
+.faq-item p {
+  font-size: 1.5em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  font-family: 'karla';
+  text-align: justify;
+}
+
+
+.contact-button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.design-process, .testimonial {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.design-process-header {
+  margin-bottom: 40px;
+}
+
+.design-process-header h3 {
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.design-process-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.design-process-header p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.design-process-header .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.design-process-header .btn:hover {
+  background-color: #555;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.step {
+  width: 43%;
+  text-align: left;
+  margin-bottom: 45px;
+}
+
+.step h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 400;
+}
+
+.step p {
+  font-size: 1.5em;
+  line-height: 1.6em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.testimonial blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #666;
+}
+
+.testimonial p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.testimonial .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.testimonial .btn:hover {
+  background-color: #555;
+}
+.contact-button {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 23px;
+  font-weight: 700;
+  background-color: #898989;
+  border: none;
+  font-family: 'karla';
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #555;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 50px;
+}
+
+footer h3 {
+  font-size: 1.9em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #000;
+}
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #333;
+  background-color: #fdfaf7;
+}
+
+.contact-section h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  font-family: 'Garamond', serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+.contact-info, .contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+form input, textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background-color: floralwhite;
+  font-size: 16px;
+}
+
+.map {
+  margin: 20px 0;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .hero-logo img {
+    height: 100px; 
+  }
+
+  .product-section, .kitchen-gallery, .article-gallery, .steps {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .product, .kitchen-item, .article-item, .step {
+    flex: 1 1 100%; 
+  }
+
+  #search-input {
+    width: 100%; 
+  }
+
+  .how-to-build-item img {
+    max-height: 400px;
+  }
+
+  .unique-kitchen-overlay {
+    padding: 40px; 
+  }
+
+  .unique-kitchen-overlay h1 {
+    font-size: 2.5rem; 
+  }
+
+  .faq-item h2, .faq-item h3, .faq-item p {
+    font-size: 1.2em; 
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
+
+  .hero-logo img {
+    height: 80px;
+  }
+
+  .kitchen-item img, .article-item img {
+    width: 100%; 
+    height: auto;
+  }
+
+  .faq-item h2 {
+    font-size: 1.8em;
+  }
+
+  .faq-item p {
+    font-size: 1em;
+  }
+}
+@media (max-width: 768px) {
+  .unique-kitchen-overlay {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .unique-kitchen-overlay h1 {
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+
+  .unique-kitchen-overlay p {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .unique-kitchen-overlay button {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .unique-kitchen-overlay {
+    padding: 20px;
+  }
+
+  .unique-kitchen-overlay h1 {
+    font-size: 24px;
+  }
+
+  .unique-kitchen-overlay p {
+    font-size: 14px;
+  }
+
+  .unique-kitchen-overlay button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
